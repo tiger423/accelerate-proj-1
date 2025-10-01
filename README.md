@@ -14,9 +14,9 @@ Need a HF key to run
 
   # Meta/Facebook models (require HF token)
   
-  python memory_predictor.py --model facebook/opt-30b --token YOUR_TOKEN
+  python memory_predictor.py --model facebook/opt-30b   --token YOUR_TOKEN
   
-  python memory_predictor.py --model meta-llama/Llama-2-7b-hf --token YOUR_TOKEN
+  python memory_predictor.py --model meta-llama/Llama-2-7b-hf   --token YOUR_TOKEN
 
   Features:
 
