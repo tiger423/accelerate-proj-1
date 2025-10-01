@@ -1,0 +1,36 @@
+{
+  "model_info": {
+    "model_name": "gpt2",
+    "num_parameters": 123532032,
+    "num_layers": 12,
+    "model_size_gb": 0.23009634017944336,
+    "hidden_size": 768,
+    "vocab_size": 50257,
+    "architecture": "gpt2"
+  },
+  "hardware": {
+    "gpu_available": false,
+    "gpu_count": 0,
+    "gpu_devices": [],
+    "system_ram_gb": 31.846572875976562,
+    "disk_free_gb": 100.39599609375,
+    "available_ram_gb": 21.408721923828125
+  },
+  "strategies": [
+    {
+      "name": "CPU/Disk Only (No GPU)",
+      "description": "All layers on CPU/Disk - slowest but works without GPU",
+      "max_memory": {
+        "0": "0GiB",
+        "cpu": "21GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 12,
+        "disk_layers": 0
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    }
+  ]
+}
