@@ -293,7 +293,7 @@ def main():
     model_info = get_model_info(args.model, args.token)
     if model_info is None:
         print("[ERROR] Failed to fetch model info. Exiting.")
-        return
+        #return
 
     # Get hardware info
     hardware = get_hardware_info()
@@ -310,3 +310,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
