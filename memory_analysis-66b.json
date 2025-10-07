@@ -1,0 +1,103 @@
+{
+  "model_info": {
+    "model_name": "facebook/opt-66b",
+    "num_parameters": 65693122560,
+    "num_layers": 64,
+    "model_size_gb": 122.36297607421875,
+    "hidden_size": 9216,
+    "vocab_size": 50272,
+    "architecture": "opt"
+  },
+  "hardware": {
+    "gpu_available": true,
+    "gpu_count": 1,
+    "gpu_devices": [
+      {
+        "id": 0,
+        "name": "NVIDIA GeForce RTX 5060 Ti",
+        "total_memory_gb": 15.47662353515625,
+        "available_memory_gb": 13.928961181640625
+      }
+    ],
+    "system_ram_gb": 62.07289505004883,
+    "disk_free_gb": 738.128345489502,
+    "available_ram_gb": 59.22721481323242
+  },
+  "strategies": [
+    {
+      "name": "CPU/Disk Only (No GPU)",
+      "description": "All layers on CPU/Disk - slowest but works without GPU",
+      "max_memory": {
+        "0": "0GiB",
+        "cpu": "59GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 35,
+        "disk_layers": 29
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    },
+    {
+      "name": "Balanced (6GB GPU)",
+      "description": "0 layers on GPU, 35 on CPU, 29 on disk",
+      "max_memory": {
+        "0": "6GiB",
+        "cpu": "59GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 35,
+        "disk_layers": 29
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    },
+    {
+      "name": "Balanced (9GB GPU)",
+      "description": "0 layers on GPU, 35 on CPU, 29 on disk",
+      "max_memory": {
+        "0": "9GiB",
+        "cpu": "59GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 35,
+        "disk_layers": 29
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    },
+    {
+      "name": "Balanced (12GB GPU)",
+      "description": "0 layers on GPU, 35 on CPU, 29 on disk",
+      "max_memory": {
+        "0": "12GiB",
+        "cpu": "59GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 35,
+        "disk_layers": 29
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    },
+    {
+      "name": "Balanced (13GB GPU)",
+      "description": "0 layers on GPU, 35 on CPU, 29 on disk",
+      "max_memory": {
+        "0": "13GiB",
+        "cpu": "59GiB"
+      },
+      "expected_distribution": {
+        "gpu_layers": 0,
+        "cpu_layers": 35,
+        "disk_layers": 29
+      },
+      "feasible": true,
+      "estimated_speed": "Very Slow"
+    }
+  ]
+}
